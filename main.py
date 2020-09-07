@@ -196,7 +196,7 @@ def main():
                             identity_loss_fn=identity_loss)
     cycle_gan_model.fit(tf.data.Dataset.zip((monet_ds, photo_ds)), epochs=50)
 
-    # Visua;ize monet-esque photos
+    # Visualize monet-esque photos that are generated from our model
 
     monet_generator, _, _, _ = generator_discrimanator()
 
