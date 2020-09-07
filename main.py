@@ -213,3 +213,7 @@ def main():
         ax[i, 0].axis("off")
         ax[i, 1].axis("off")
     plt.show()
+
+
+if __name__ == "__main__":
+    main()
