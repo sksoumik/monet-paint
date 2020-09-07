@@ -20,5 +20,6 @@ Generator:  UNet architechture
 #### Monet paint result
 ![monet paint](static/monet_paint.png)
 
-
+---
+Model was trained on Kaggle Kernel with TPU. 
 
