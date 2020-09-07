@@ -65,3 +65,26 @@ def load_dataset(filenames, labeled=True, ordered=False):
     return dataset
 
 
+
+
+def main():
+    MONET_FILENAMES, PHOTO_FILENAMES  = filenames()
+    monet_ds = load_dataset(MONET_FILENAMES, labeled=True).batch(1)
+    photo_ds = load_dataset(PHOTO_FILENAMES, labeled=True).batch(1)
+
+    example_monet = next(iter(monet_ds))
+    example_photo = next(iter(photo_ds))
+
+    # visualize a photo example 
+    plt.subplot(121)
+    plt.title('Photo')
+    plt.imshow(example_photo[0] * 0.5 + 0.5)
+    plt.show()
+
+    # visualize a Monet example.
+    plt.subplot(122)
+    plt.title('Monet')
+    plt.imshow(example_monet[0] * 0.5 + 0.5)
+    plt.show() 
+
+    
