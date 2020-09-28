@@ -1,5 +1,5 @@
 ### monet-paint
-Build a Generative Adverserial Network(GAN) that generates Monet-style images 
+Building a Generative Adverserial Network(GAN) that generates Monet-style images 
 
 #### Dataset
 
